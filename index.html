@@ -3,196 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Estate & Private Brokerage | Bogotá</title>
+  <title>Broker Inmobiliario | Alianza TREA Real Estate</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .serif-title { font-family: 'Playfair Display', serif; }
+    .font-display { font-family: 'Space Grotesk', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex items-center justify-center p-4 selection:bg-red-500 selection:text-white">
 
-  <!-- Navegación -->
-  <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="text-xl font-bold tracking-tight uppercase serif-title text-white">Private Brokerage</span>
-        <span class="h-2 w-2 rounded-full bg-amber-400"></span>
+  <main class="w-full max-w-lg bg-neutral-900/70 border border-neutral-800 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 my-8">
+    
+    <!-- Encabezado con tu Foto y Perfil -->
+    <div class="flex flex-col items-center text-center space-y-4">
+      <div class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-neutral-700 shadow-xl bg-neutral-800">
+        <!-- Tu foto incrustada directamente -->
+        <img src="perfil.jpg" id="foto-perfil" alt="Broker Inmobiliario" class="w-full h-full object-cover">
       </div>
-      <a href="https://wa.me/573114333030?text=Hola,%20deseo%20asesoría%20sobre%20el%20portafolio%20de%20propiedades%20en%20Bogotá" target="_blank" class="text-xs font-semibold uppercase tracking-wider bg-amber-400 text-slate-950 px-5 py-2.5 rounded-full hover:bg-amber-300 transition-all">
-        Contactar Directo
-      </a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <div class="lg:col-span-7 space-y-6 text-left">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-400/30 bg-amber-400/10 text-amber-300 text-xs font-medium">
-          <span>Activos Residenciales & Comerciales</span>
-          <span>•</span>
-          <span>Bogotá & Alrededores</span>
+      <div class="space-y-1">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-semibold uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+          Broker Asociada TREA
         </div>
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
-          Gestión y colocación estratégica de inmuebles <span class="serif-title text-amber-300 italic font-normal">de alto valor.</span>
-        </h1>
-        <p class="text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed">
-          Conexión directa entre propietarios calificados e inversionistas privados. Transacciones estructuradas, agilidad en colocación y acceso a inventario off-market en las mejores zonas de Bogotá.
+        <h1 class="text-2xl font-bold text-white font-display pt-1">Asesoría Inmobiliaria</h1>
+        <p class="text-xs text-neutral-400 max-w-xs mx-auto leading-relaxed">
+          Especialista en adquisición, colocación y arriendo de activos residenciales y corporativos en Bogotá.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 pt-2">
-          <a href="https://wa.me/573114333030?text=Hola,%20quiero%20consignar%20mi%20inmueble%20para%20venta%20rápida" target="_blank" class="inline-flex justify-center items-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition-all text-sm">
-            Consignar Mi Propiedad
-          </a>
-          <a href="https://wa.me/573114333030?text=Hola,%20soy%20inversionista%20y%20busco%20oportunidades%20en%20Bogotá" target="_blank" class="inline-flex justify-center items-center gap-2 border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 px-8 py-4 rounded-xl font-medium transition-all text-sm">
-            Portafolio Inversionistas
-          </a>
-        </div>
-      </div>
-
-      <!-- Tarjeta Perfil -->
-      <div class="lg:col-span-5 flex justify-center">
-        <div class="relative w-full max-w-sm rounded-3xl p-3 bg-gradient-to-b from-slate-700/50 to-slate-900/50 border border-slate-700/60 shadow-2xl backdrop-blur-xl">
-          <div class="relative aspect-[4/5] overflow-hidden rounded-2xl">
-            <!-- Coloca tu foto como perfil.jpg en la misma carpeta del index.html -->
-            <img src="perfil.jpg" alt="Broker Inmobiliario" class="object-cover w-full h-full">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-4 right-4 text-left">
-              <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Real Estate Advisor</span>
-              <p class="text-xl font-bold text-white leading-tight">Brokerage & Negociación</p>
-              <p class="text-xs text-slate-300 mt-0.5">Especialista en Activos de Alto Valor</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Cifras / Credenciales -->
-  <section class="border-y border-slate-800/80 bg-slate-900/30 py-10 px-6">
-    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div>
-        <p class="text-3xl font-extrabold text-white">100%</p>
-        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Gestión Personalizada</p>
-      </div>
-      <div>
-        <p class="text-3xl font-extrabold text-white">Off-Market</p>
-        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Oportunidades Privadas</p>
-      </div>
-      <div>
-        <p class="text-3xl font-extrabold text-white">0 Trabas</p>
-        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Filtro Legal Riguroso</p>
-      </div>
-      <div>
-        <p class="text-3xl font-extrabold text-white">Bogotá</p>
-        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Estratos 4, 5 y 6</p>
       </div>
     </div>
-  </section>
 
-  <!-- Portafolio Vitrina -->
-  <section class="py-24 px-6 max-w-6xl mx-auto">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-      <div>
-        <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Oportunidades Destacadas</span>
-        <h2 class="text-3xl font-bold text-white tracking-tight mt-1">Propiedades en Gestión</h2>
-      </div>
-      <p class="text-sm text-slate-400 max-w-md">Inmuebles residenciales y comerciales analizados con potencial de valorización inmediata.</p>
+    <!-- Respaldo TREA -->
+    <div class="bg-neutral-800/40 border border-neutral-800 rounded-2xl p-4 text-center space-y-1">
+      <p class="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold">Alianza Comercial & Respaldo</p>
+      <p class="text-sm font-bold text-neutral-200">TREA - The Real Estate Agency • MLS Latam</p>
+      <p class="text-[11px] text-neutral-500">+6.000 propiedades verificadas y blindaje legal.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Botones de Conexión y Acción -->
+    <div class="space-y-3">
       
-      <!-- Ficha 1 -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col justify-between">
-        <div>
-          <div class="relative h-48 bg-slate-800 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Apartaestudio" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-amber-400 text-slate-950 font-bold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full">Venta Directa</span>
-          </div>
-          <div class="p-6">
-            <p class="text-xs font-semibold text-slate-400">Santa Bárbara • Estrato 5</p>
-            <h3 class="text-lg font-bold text-white mt-1">Apartaestudio de Inversión</h3>
-            <p class="text-2xl font-black text-amber-300 mt-3">$435.000.000 COP</p>
-            <p class="text-xs text-slate-400 mt-2 leading-relaxed">53 m² • 1 Hab • 2 Baños • Garaje propio. Ideal para renta tradicional corporativa o Airbnb.</p>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/573114333030?text=Hola,%20me%20interesa%20información%20del%20Apartaestudio%20en%20Santa%20Bárbara" target="_blank" class="w-full block text-center bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 rounded-xl text-xs uppercase tracking-wider transition-colors">
-            Solicitar Ficha Técnica
-          </a>
-        </div>
-      </div>
+      <!-- WhatsApp Directo -->
+      <a href="https://wa.me/573114333030?text=Hola,%20deseo%20asesoría%20para%20comprar/arrendar%20un%20inmueble%20en%20Bogotá" target="_blank" class="w-full flex items-center justify-between p-4 rounded-xl bg-white hover:bg-neutral-200 text-neutral-950 font-bold transition-all shadow-md group">
+        <span class="flex items-center gap-3 text-sm">
+          <svg class="w-5 h-5 fill-current text-green-600" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Hablar Conmigo por WhatsApp
+        </span>
+        <span class="text-xs text-neutral-500 group-hover:translate-x-1 transition-transform">→</span>
+      </a>
 
-      <!-- Ficha 2 -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col justify-between">
-        <div>
-          <div class="relative h-48 bg-slate-800 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Apartamento" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-amber-400 text-slate-950 font-bold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full">Oportunidad</span>
-          </div>
-          <div class="p-6">
-            <p class="text-xs font-semibold text-slate-400">El Virrey / Chicó • Estrato 6</p>
-            <h3 class="text-lg font-bold text-white mt-1">Apartamento Familiar Remodelado</h3>
-            <p class="text-2xl font-black text-amber-300 mt-3">$520.000.000 COP</p>
-            <p class="text-xs text-slate-400 mt-2 leading-relaxed">80 m² • 3 Habs • 2 Baños. Acabados premium, cocina abierta y vista exterior.</p>
-          </div>
+      <!-- Conexión: Portal de TREA Venta -->
+      <a href="https://trearealestate.mlslatam.com/inmuebles?op=Venta" target="_blank" class="w-full flex items-center justify-between p-4 rounded-xl bg-neutral-800/80 hover:bg-neutral-800 border border-neutral-700/60 font-semibold transition-all group">
+        <div class="text-left">
+          <p class="text-xs text-red-400 uppercase tracking-wider font-bold">Portafolio TREA</p>
+          <p class="text-sm text-neutral-200">Ver Inmuebles en Venta</p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/573114333030?text=Hola,%20me%20interesa%20información%20del%20Apartamento%20en%20El%20Virrey" target="_blank" class="w-full block text-center bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 rounded-xl text-xs uppercase tracking-wider transition-colors">
-            Solicitar Ficha Técnica
-          </a>
-        </div>
-      </div>
+        <span class="text-xs text-neutral-400 group-hover:translate-x-1 transition-transform">↗</span>
+      </a>
 
-      <!-- Ficha 3 -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition-all flex flex-col justify-between">
-        <div>
-          <div class="relative h-48 bg-slate-800 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Oficina" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-white text-slate-950 font-bold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full">Corporativo</span>
-          </div>
-          <div class="p-6">
-            <p class="text-xs font-semibold text-slate-400">El Nogal • Consultorio / Oficina</p>
-            <h3 class="text-lg font-bold text-white mt-1">Espacio Profesional de Prestigio</h3>
-            <p class="text-2xl font-black text-amber-300 mt-3">$1.900.000 COP <span class="text-xs font-normal text-slate-400">/ mes</span></p>
-            <p class="text-xs text-slate-400 mt-2 leading-relaxed">27 m² • Edificio médico/empresarial con recepción, batería de baños y parqueadero.</p>
-          </div>
+      <!-- Conexión: Portal de TREA Arriendo -->
+      <a href="https://trearealestate.mlslatam.com/inmuebles?op=Arriendo" target="_blank" class="w-full flex items-center justify-between p-4 rounded-xl bg-neutral-800/80 hover:bg-neutral-800 border border-neutral-700/60 font-semibold transition-all group">
+        <div class="text-left">
+          <p class="text-xs text-red-400 uppercase tracking-wider font-bold">Portafolio TREA</p>
+          <p class="text-sm text-neutral-200">Ver Inmuebles en Arriendo</p>
         </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/573114333030?text=Hola,%20deseo%20agendar%20visita%20para%20el%20consultorio%20en%20El%20Nogal" target="_blank" class="w-full block text-center bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 rounded-xl text-xs uppercase tracking-wider transition-colors">
-            Agendar Visita
-          </a>
-        </div>
-      </div>
+        <span class="text-xs text-neutral-400 group-hover:translate-x-1 transition-transform">↗</span>
+      </a>
+
+      <!-- Conexión: Consignar Inmueble -->
+      <a href="https://wa.me/573114333030?text=Hola,%20tengo%20un%20inmueble%20en%20Bogotá%20y%20quiero%20consignarlo%20con%20ustedes" target="_blank" class="w-full flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold transition-all shadow-lg group">
+        <span class="text-sm">Consignar Mi Propiedad</span>
+        <span class="text-xs text-white/80 group-hover:translate-x-1 transition-transform">→</span>
+      </a>
 
     </div>
-  </section>
 
-  <!-- Banner de Cierre / CTA WhatsApp -->
-  <section class="border-t border-slate-800 py-20 px-6 bg-gradient-to-b from-slate-950 to-slate-900 text-center">
-    <div class="max-w-3xl mx-auto space-y-6">
-      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">¿Buscando comprador o inversionista para su inmueble?</h2>
-      <p class="text-slate-400 text-base leading-relaxed">
-        Trabajo bajo mandato de corretaje simple sin exclusividades obligatorias ni cobros anticipados. Solo cobro comisión de éxito cuando la promesa de compraventa esté firmada.
-      </p>
-      <div class="pt-4">
-        <a href="https://wa.me/573114333030?text=Buenas%20tardes,%20deseo%20hablar%20directamente%20sobre%20un%20inmueble%20en%20Bogotá" target="_blank" class="inline-flex items-center gap-3 bg-amber-400 hover:bg-amber-300 text-slate-950 text-base font-bold px-8 py-4 rounded-2xl shadow-xl transition-all">
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          Contactar al WhatsApp (+57 311 433 3030)
-        </a>
-      </div>
-    </div>
-  </section>
+    <!-- Pie / Ubicación -->
+    <footer class="pt-2 text-center text-[11px] text-neutral-500">
+      <p>Bogotá, D.C. • Cobertura Residencial y Comercial</p>
+      <p class="mt-1">Contacto directo: +57 311 433 3030</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="py-8 px-6 border-t border-slate-900 text-center text-xs text-slate-500">
-    <p>© 2026 Private Brokerage Bogotá. Todos los derechos reservados.</p>
-  </footer>
+  </main>
 
 </body>
 </html>
